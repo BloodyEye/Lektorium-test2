@@ -1,0 +1,17 @@
+.modal{
+	    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 581px;
+    min-width: 528px;
+    width: auto;
+    padding: 40px;
+    }
+	.modal-form .modal-field{
+		display: block;
+		margin-bottom: 10px;
+		font-size: 12px;
+		line-height: 1.1667;
+
+	}
