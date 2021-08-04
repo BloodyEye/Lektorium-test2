@@ -49,6 +49,13 @@ input {
   width: 100%;
   margin-bottom: 20px;
   padding: 5px;
+  border: 1px solid #c1c1c191;
+  border-radius: 4px;
+  outline: none;
+}
+.sign-form__input:hover,
+.sign-form__input:focus{
+  border-color: #4a90e2;
 }
 
 .sign-form__button {
@@ -63,6 +70,10 @@ input {
   font-weight: bold;
   margin-bottom: 15px;
 }
+.sign-form__button:hover,
+.sign-form__button:focus{
+  background: #4a90e2;
+}
 .h2 {
   font-size: 12px;
 }
@@ -75,11 +86,19 @@ input {
   list-style: none;
   color: #556bcd;
 }
+.link .link__title:hover,
+.link .link__title:focus{
+  color: #4a90e2;
+}
 .sign-form__forgot-password {
   font-size: 12px;
   font-weight: bold;
   padding-bottom: 3px;
   color: #556bcd;
+}
+.sign-form__forgot-password:hover,
+.sign-form__forgot-password:focus{
+  color: #4a90e2;
 }
 .container-password > ul {
   list-style: none;
@@ -97,6 +116,10 @@ input {
 .under-form .under-form__link {
   list-style: none;
   color: #556bcd;
+}
+.under-form .under-form__link:hover,
+.under-form .under-form__link:focus{
+  color: #4a90e2;
 }
 /*END*/
 
