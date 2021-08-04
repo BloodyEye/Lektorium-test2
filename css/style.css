@@ -15,57 +15,47 @@ body {
 input {
   font-family: inherit;
 }
-.h1-title{
-  text-align:center;
+.h1-title {
+  text-align: center;
   position: absolute;
   top: 18%;
   left: 50%;
   transform: translate(-50%, 0%);
-  color: #556BCD; 
+  color: #556bcd;
 }
-.h2{
+.h2 {
   height: 50px;
 }
 
-.container-chekbox{
-  padding-bottom: 25px;
-  text-align: left;
-}
-
-.sign-form{
+.sign-form {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
   min-height: 250px;
-  border: 1px solid #000;
+  border: 1px solid #80808054;
   margin: 0 auto;
   padding: 40px;
-  border-radius: 3px;
-  }
-.sign-form__title{
+  border-radius: 5px;
+}
+.sign-form__title {
   font-size: 12px;
   font-weight: bold;
-  padding-bottom: 3px;  
+  padding-bottom: 3px;
 }
-.sign-form__input{
+.sign-form__input {
   display: block;
   width: 100%;
   margin-bottom: 20px;
   padding: 5px;
 }
-.sign-form__checkbox{
-  width: 10px;
-  height: 9px;
 
-  border-radius: 3px;
-}
-.sign-form__button{
+.sign-form__button {
   display: block;
   height: 35px;
   width: 100%;
-  background: #556BCD;
+  background: #556bcd;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -73,37 +63,85 @@ input {
   font-weight: bold;
   margin-bottom: 15px;
 }
-.h2{
+.h2 {
   font-size: 12px;
 }
-.h2-text{
+.h2-text {
   font-weight: 500;
 }
-.link .link__title{
+.link .link__title {
   text-align: center;
   width: 100%;
   list-style: none;
-  color: #556BCD;
+  color: #556bcd;
 }
-.sign-form__forgot-password{
+.sign-form__forgot-password {
   font-size: 12px;
   font-weight: bold;
-  padding-bottom: 3px; 
-  color: #556BCD;
+  padding-bottom: 3px;
+  color: #556bcd;
 }
-.container-password > ul{
+.container-password > ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-.under-form{
+/*Header h1*/
+.under-form {
   position: absolute;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
-.under-form .under-form__link{
+.under-form .under-form__link {
   list-style: none;
-  color: #556BCD;
+  color: #556bcd;
 }
+/*END*/
+
+/*Shadow*/
+.h1 .sign-form {
+  background: white;
+  display: inline-block;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/*END*/
+
+/*Chekbox*/
+.container-chekbox {
+  padding-bottom: 25px;
+  text-align: left;
+}
+.sign-form__checkbox {
+  position: absolute;
+  appearance: none;
+}
+.check__box {
+  position: absolute;
+  margin-left: -1.2em;
+  width: 1em;
+  height: 1em;
+}
+.check__focus {
+  fill: none;
+}
+.check__input:checked + * .check__square {
+  fill: #4a90e2;
+}
+.check__square {
+  fill: #ffffff;
+  stroke: #4a90e2;
+  stroke-width: 2px;
+}
+.check__mark {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 3px;
+}
+.checbox {
+  display: block;
+  margin-bottom: 0.5em;
+  padding-left: 1.2em;
+}
+/*END*/
