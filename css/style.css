@@ -34,7 +34,7 @@ input {
   transform: translate(-50%, -50%);
   width: 350px;
   min-height: 250px;
-  border: 1px solid #80808054;
+  border: 1px solid #c1c1c191;
   margin: 0 auto;
   padding: 40px;
   border-radius: 5px;
@@ -104,44 +104,41 @@ input {
 .h1 .sign-form {
   background: white;
   display: inline-block;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 /*END*/
 
-/*Chekbox*/
-.container-chekbox {
-  padding-bottom: 25px;
-  text-align: left;
-}
-.sign-form__checkbox {
-  position: absolute;
-  appearance: none;
-}
-.check__box {
-  position: absolute;
-  margin-left: -1.2em;
-  width: 1em;
-  height: 1em;
-}
-.check__focus {
-  fill: none;
-}
-.check__input:checked + * .check__square {
-  fill: #4a90e2;
-}
-.check__square {
-  fill: #ffffff;
-  stroke: #4a90e2;
-  stroke-width: 2px;
-}
-.check__mark {
-  fill: none;
-  stroke: #ffffff;
-  stroke-width: 3px;
-}
-.checbox {
+/*Checkbox*/
+.option{
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 25px;
+}
+.check{
   padding-left: 1.2em;
+  cursor: pointer;
+}
+.sign-form__checkbox{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  
+}
+.check-style{
+  position: absolute;
+  margin-top: 0.5em;
+  margin-left: -1em;
+  width: 0.6em;
+  height: 0.6em;
+  box-shadow: 0 0 0 0.1em #4a90e2;
+  border-radius: 2px;
+  background-color: #fff;
+  
+}
+/*Checked*/
+.sign-form__checkbox:checked + .check-style{
+  background-color: #4a90e2;
+  background-image: url(https://pepelsbey.github.io/playground/14/images/check.svg);
 }
 /*END*/
